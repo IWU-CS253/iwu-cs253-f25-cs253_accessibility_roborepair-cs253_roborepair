@@ -4,24 +4,53 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #999; /* Poor contrast */
+    color: #000000; /* Poor contrast */
     background-color: #ccc;
 	border: solid 5px;
-	margin: 100px;
+	margin: 50px; /* extra marign on al around */
+    padding: 50px; /*  needed space on the side*/
 }
 
 header {
 	text-align: center;
-	background-color: #333;
+	background-color: #000000;
 	color: white;
-	padding: 10px 0;
+	padding: 10px;
 }
 h1 {
-    font-size: 1em; /* Small font size for headings */
+    font-size: 3em; /* Small font size for headings */
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+header nav ul li {
+    text-decoration: none;
 }
 
 a {
-    color: #999; /* Poor link contrast */
+    color: #ffffff; /* Poor link contrast */
+    text-decoration: none; /* removing underline */
+    border: solid 1px; /* added border for visibility */
+    padding: 5px;
+    border-radius: 10px;
+}
+
+div h2 {
+    text-align: center; /*  text aligned*/
+}
+
+div p{
+    text-align: center;
+}
+
+header img{
+    align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 a:hover {
@@ -34,8 +63,9 @@ form {
 
 input[type="submit"] {
     background-color: lightgrey;
-    color: white;
-    border: none;
+    color: rgb(0, 0, 0);
+    border: solid black;
+    border-radius: 5px;
 }
 
 button {
@@ -47,3 +77,21 @@ button {
 a:focus, button:focus, input:focus {
     /* No focus styles defined */
 }
+
+/* added css for footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* added css for form*/
+form{
+    text-align: center;
+    padding: 20px;
+}
+

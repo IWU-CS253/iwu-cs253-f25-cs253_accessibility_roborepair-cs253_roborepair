@@ -1,15 +1,18 @@
 <!-- NOTE!!! Add comments at the end of each line of code you add or change,
  indicate why you made the addition/change and/or the specific accessibility
  issue you are trying to address --> 
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
+    <!--Set the language to English to for screen readers-->
 <head>
     <title>Services - RoboCare</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+
+<body width="100%">
     <header>
-	    <img src="images/banner.png" width="400px">
+	    <img src="images/banner.png" width="70%" alt="RoboCare Banner">
+        <!-- Make image scale with webpage to assist users who zoom -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -18,13 +21,14 @@
             </ul>
         </nav>
     </header>
+
     <h1>Our Services</h1>
-    <p>Explore our wide range of spare parts for retired robots:</p>
+    <h2>Explore our wide range of spare parts for retired robots:</2>
 	<section>
-		<h2>Explore Our Wide Range of Spare Parts for Retired Robots</h2>
-		
+        <!-- removed redundent text to assist people with screen readers -->
 		<div class="product-category">
 			<h3>Arms and Grippers</h3>
+            <!-- changed heading to match the rest of the heading hierarchy to assist people with screen readers -->
 			<p>Our selection of arms and grippers is unmatched. From precision manipulators for delicate tasks to heavy-duty grippers for industrial use, we have it all. Each part is engineered for durability and flexibility, ensuring your robot can handle any task with ease.</p>
 		</div>
 
@@ -43,9 +47,14 @@
     <h2>Contact Us for More</h2>
     <p>For inquiries, email us at: <a href="mailto:contact@robocare.org">contact@robocare.org</a></p>
     
-    <div onclick="location.href='index.html';" style="color: blue; cursor: pointer;">Back to Home</div>
+    <div onclick="location.href='index.html';">Back to Home</div>
+
     <footer>
-        <p><img src="images/unscrupulous.png" width="50px">© 2024 Unscrupulous Web Design</p>
+        <p>
+            <img src="images/unscrupulous.png" width="20%" alt="">
+            <!-- added alt text and made image scale for users with screen readers or users with zoom -->
+            © 2024 Unscrupulous Web Design
+        </p>
     </footer>
 
 </body>

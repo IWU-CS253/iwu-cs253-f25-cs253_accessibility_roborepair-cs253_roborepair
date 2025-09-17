@@ -16,9 +16,7 @@ header {
 	color: white;
 	padding: 10px 0;
 }
-h1 {
-    font-size: 1em; /* Small font size for headings */
-}
+
 
 a {
     color: #999; /* Poor link contrast */

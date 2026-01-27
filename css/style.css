@@ -4,7 +4,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #999; /* Poor contrast */
+    color: black; /* Poor contrast */
     background-color: #ccc;
 	border: solid 5px;
 	margin: 100px;
@@ -16,34 +16,57 @@ header {
 	color: white;
 	padding: 10px 0;
 }
+
 h1 {
-    font-size: 1em; /* Small font size for headings */
+    font-size: 2.5em; /* Small font size for headings */
 }
 
 a {
-    color: #999; /* Poor link contrast */
+    color: blue; /* Poor link contrast */
 }
 
 a:hover {
-    color: #ccc; /* Even lower contrast on hover */
+    color: red; /* Even lower contrast on hover */
 }
 
 form {
-    color: #000;
+    color: black;
 }
 
 input[type="submit"] {
-    background-color: lightgrey;
+<<<<<<< HEAD
+    background-color: lightgray;
     color: white;
+=======
+    background-color: lightgrey;
+    color: black;
+>>>>>>> main
     border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(86, 86, 86);
+    border:white;
+    cursor: pointer;
 }
 
 button {
     cursor: pointer;
-    font-size: 0.8em; /* Small font size */
+    font-size: 1.5em; /* Small font size */
 }
 
 /* Missing focus styles for interactive elements */
 a:focus, button:focus, input:focus {
     /* No focus styles defined */
+}
+
+.header-container{
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-links-container{
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
 }
